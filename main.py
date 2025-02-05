@@ -4,7 +4,7 @@ from keras import models
 
 print(Path('.').absolute())
 
-url = "https://drive.google.com/file/d/1u_5ifSE9mZiuS3364mUXl-F1tQ2xGz6G/view?usp=sharing"
-path = "model"
+url = "https://drive.google.com/file/d/1e9hjmRHoFNxpdBx9uAkuW5kYMU1y7hvN/view?usp=sharing"
+path = "model.h5"
 gdown.download(url, path)
 models.load_model(filepath=path, compile=False)
