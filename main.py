@@ -1,5 +1,5 @@
 from pathlib import Path
-from keras import models
+# from keras import models
 from st_files_connection import FilesConnection
 
 conn = st.connection('gcs', type=FilesConnection)
