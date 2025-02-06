@@ -1,10 +1,7 @@
 from pathlib import Path
-import gdown
 from keras import models
+from st_files_connection import FilesConnection
 
-print(Path('.').absolute())
-
-url = "https://drive.google.com/file/d/1e9hjmRHoFNxpdBx9uAkuW5kYMU1y7hvN/view?usp=sharing"
+conn = st.connection('gcs', type=FilesConnection)
 path = "model.h5"
-gdown.download(url, path, fuzzy=True)
-models.load_model(filepath=path, compile=False)
+# models.load_model(filepath=path, compile=False)
